@@ -61,15 +61,17 @@ function SuicideDkp:OnDocLoaded()
 		
 	    self.wndMain:Show(false, true)
 
-		-- if the xmlDoc is no longer needed, you should set it to nil
-		-- self.xmlDoc = nil
-		
-		-- Register handlers for events, slash commands and timer, etc.
-		-- e.g. Apollo.RegisterEventHandler("KeyDown", "OnKeyDown", self)
 		Apollo.RegisterSlashCommand("dkp", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DKP", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DkP", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("Dkp", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DKp", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DKP", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("dKp", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DKp", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("DKP", "OnSuicideDkpOn", self)
+		Apollo.RegisterSlashCommand("dKP", "OnSuicideDkpOn", self)
 
-
-		-- Do additional Addon initialization here
 	end
 end
 
@@ -97,6 +99,10 @@ function SuicideDkp:OnCancel()
 	self.wndMain:Close() -- hide the window
 end
 
+
+function SuicideDkp:addPlayer( wndHandler, wndControl, eMouseButton )
+	self.wndMain:FindChild("TreeControl")
+end
 
 -----------------------------------------------------------------------------------------------
 -- SuicideDkp Instance
