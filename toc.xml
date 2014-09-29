@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Addon Author="Bootyhoo" APIVersion="9" Name="SuicideDkp" Description="An addon to manage and issue DKP.">
+    <Script Name="SuicideDkp.lua"/>
+    <Form Name="SuicideDkp.xml"/>
+</Addon>
